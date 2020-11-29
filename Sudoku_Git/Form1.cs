@@ -248,6 +248,8 @@ namespace Sudoku_Git
             StartNewGame();
             if (!beginnerLevel.Checked && !intermediateLevel.Checked && !advancedLevel.Checked)
                 MessageBox.Show("Please, select a level for starting the game.");
+            else
+                MessageBox.Show("In this game wrong inputs are automatically deleted. If you want clear a cell by yourself please select the cell and press 0.Have Fun :)");
         }
     }
 }
