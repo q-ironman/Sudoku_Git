@@ -128,7 +128,7 @@ namespace Sudoku_Git
 
 
 
-            return true;
+            
         }
         SudokuCell[,] cells = new SudokuCell[9, 9];
         private void CreateCells()
