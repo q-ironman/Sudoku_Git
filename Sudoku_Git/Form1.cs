@@ -180,7 +180,10 @@ namespace Sudoku_Git
                     cell.Clear();
                 else
                 {
+                    cell.Text = value.ToString();
+                    cell.ForeColor = Color.Red;
                     MessageBox.Show("Wrong input");
+                    cell.Clear();
 
                 }
                 cell.ForeColor = SystemColors.ControlDarkDark;
