@@ -195,15 +195,13 @@ namespace Sudoku_Git
             panel1.Height = 430;
             panel1.Width = 430;
             panel1.Location = new Point(50, 20);
-            checkButton.Location = new Point(480, 40);
-            clearButton.Location = new Point(480, 100);
             label1.Location = new Point(480, 200);
             beginnerLevel.Location = new Point(480, 220);
             intermediateLevel.Location = new Point(480, 240);
             advancedLevel.Location = new Point(480, 260);
             newGameButton.Location = new Point(480, 300);
-            checkButton.Visible = false;
-            clearButton.Visible = false;
+            this.Controls.Remove(clearButton);
+            this.Controls.Remove(checkButton);
         }
         /*private void checkButton_Click(object sender, EventArgs e)
         {
