@@ -166,18 +166,28 @@ namespace Sudoku_Git
                 return;
 
             int value;
-
+            int i = 0;
             
             if (int.TryParse(e.KeyChar.ToString(), out value))
             {
-               
-                if (value == 0)
+
+                if (value == cell.Value)
+                {
+                    cell.Text = value.ToString();
+                    i++;
+                }
+                else if (value == 0)
                     cell.Clear();
                 else
-                    cell.Text = value.ToString();
+                {
+                    MessageBox.Show("Wrong input");
 
+                }
                 cell.ForeColor = SystemColors.ControlDarkDark;
             }
+            if (i == 81)
+                MessageBox.Show("You won!");
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -192,8 +202,10 @@ namespace Sudoku_Git
             intermediateLevel.Location = new Point(480, 240);
             advancedLevel.Location = new Point(480, 260);
             newGameButton.Location = new Point(480, 300);
+            checkButton.Visible = false;
+            clearButton.Visible = false;
         }
-        private void checkButton_Click(object sender, EventArgs e)
+        /*private void checkButton_Click(object sender, EventArgs e)
         {
             var wrongCells = new List<SudokuCell>();
             
@@ -220,8 +232,8 @@ namespace Sudoku_Git
                 wrongCells.ForEach(x => x.Text = string.Empty);
             }
             
-        }
-        private void clearButton_Click(object sender, EventArgs e)
+        }*/
+        /*private void clearButton_Click(object sender, EventArgs e)
         {
             foreach(var cell in cells)
             {
@@ -229,7 +241,7 @@ namespace Sudoku_Git
                     cell.Clear();
 
             }
-        }
+        }*/
         private void newGameButton_Click(object sender, EventArgs e)
         {
             StartNewGame();

@@ -48,18 +48,18 @@ namespace Sudoku_Git
             this.checkButton.TabIndex = 0;
             this.checkButton.Text = "Check Input";
             this.checkButton.UseVisualStyleBackColor = true;
-            this.checkButton.Click += new System.EventHandler(this.checkButton_Click);
+            //this.checkButton.Click += new System.EventHandler(this.checkButton_Click);
             // 
             // clearButton
             // 
-            this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            /*this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.clearButton.Location = new System.Drawing.Point(566, 133);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(141, 38);
             this.clearButton.TabIndex = 1;
             this.clearButton.Text = "Clear Input";
             this.clearButton.UseVisualStyleBackColor = true;
-            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);*/
             // 
             // beginnerLevel
             // 
